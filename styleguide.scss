@@ -134,15 +134,6 @@ $bg-light: #c4ccd0;
 	--ms-ring-color:#cacacab9 !important;
 	--ms-spinner-color: #101820 !important;
 }
-@font-face {
-	font-family: 'RobotoFlex';
-	src: url('../src/assets/fonts/Roboto Flex variable.woff');
-}
-
-@font-face {
-	font-family: 'Eurostile';
-	src: url('../src/assets/fonts/Eurostile-LT-Medium.woff');
-}
 
 [data-bs-theme=light] {
 	--vff-bg-color: #FFF;
