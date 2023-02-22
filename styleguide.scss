@@ -1,0 +1,323 @@
+// Custom.scss
+
+/* First, include any default SCSS variables here, which override existing BS colors: */
+$primary: #00263A;/* Deep Space Blue */
+$secondary: #0E4C87;/* "Tonal" */
+$tertiary: #FEBE3F;/* Space Gold */
+$light: #EDF2F5;
+$green: #006C50;/* success */
+$yellow: #F8BD49;/* warning */
+$red: #B3261E;
+$info: #4ED8E7;
+
+$gray-100: #E1E4E6;
+$gray-200: #C5C8CA;
+$gray-300: #AAADAE;
+$gray-400: #909394;
+$gray-500: #757879;
+$gray-600: #5D6062;
+$gray-700: #464849;
+$gray-800: #303233;
+$gray-900: #1B1E1F;
+
+
+/* Second, additional new vars for BS: */
+:root,
+[data-bs-theme=light] {
+	--bs-primary90: #C9E6FF;
+	--bs-primary80: #89CEFF;
+	--bs-primary30: #004C6E;
+	--bs-primary20: #00344D;
+	--bs-secondary80: #A4C9FF;
+	--bs-secondary50: #EBF1FF;
+	--bs-tertiary: #FEBE3F;
+	--bs-success80: #67DBB1;
+	--bs-warning80: #EEC789;
+	--bs-danger70: #EC928E;
+	--bs-interactive: #2979C9;
+	--bs-gray-95: #EEF2F4;
+	--bs-gray-99: #FAFDFF;
+	--bs-grayvar-100: #E0E8EC;
+	--bs-grayvar-200: #C4CCD0;
+	--bs-grayvar-300: #A9B0B4;
+	--bs-grayvar-400: #8F9599;
+	--bs-grayvar-500: #747A7E;
+	--bs-grayvar-600: #5D6366;
+	--bs-grayvar-700: #454B4F;
+	--bs-grayvar-800: #2F3437;
+	--bs-grayvar-900: #1A1F22;
+	--bs-sbd3: #872634;
+	--bs-sld45: #A1A8B0;
+	--bs-dark-rgb: 0, 255,0;
+}
+
+[data-bs-theme=dark] {
+	--bs-dark-rgb: 32,39,42;
+}
+
+$grayvar-100: var(--bs-grayvar-100);
+$grayvar-200: var(--bs-grayvar-200);
+$grayvar-300: var(--bs-grayvar-300);
+$grayvar-400: var(--bs-grayvar-400);
+$grayvar-500: var(--bs-grayvar-500);
+$grayvar-600: var(--bs-grayvar-600);
+$grayvar-700: var(--bs-grayvar-700);
+$grayvar-800: var(--bs-grayvar-800);
+$grayvar-900: var(--bs-grayvar-900);
+
+
+/* Background colors */
+.bg-grayvar-100 { background-color: $grayvar-100; }
+.bg-grayvar-200 { background-color: $grayvar-200; }
+.bg-grayvar-300 { background-color: $grayvar-300; }
+.bg-grayvar-400 { background-color: $grayvar-400; }
+.bg-grayvar-500 { background-color: $grayvar-500; }
+.bg-grayvar-600 { background-color: $grayvar-600; }
+.bg-grayvar-700 { background-color: $grayvar-700; }
+.bg-grayvar-800 { background-color: $grayvar-800; }
+.bg-grayvar-900 { background-color: $grayvar-900; }
+.bg-gray95 { background-color: var(--bs-gray-95); }
+.bg-gray99 { background-color: var(--bs-gray-99); }
+.bg-interactive { background-color: var(--bs-interactive) !important; }
+
+
+.border-grayvar-100 { border-color: $grayvar-100; }
+.border-grayvar-200 { border-color: $grayvar-200; }
+.border-grayvar-300 { border-color: $grayvar-300; }
+.border-grayvar-400 { border-color: $grayvar-400; }
+.border-grayvar-500 { border-color: $grayvar-500; }
+.border-grayvar-600 { border-color: $grayvar-600; }
+.border-grayvar-700 { border-color: $grayvar-700; }
+.border-grayvar-800 { border-color: $grayvar-800; }
+.border-grayvar-900 { border-color: $grayvar-900; }
+
+
+
+/* Colors */
+// see --bs-body-color | $body-color: #1B1E1F;
+
+/* Buttons: */
+$btn-border-radius: 1rem;
+$btn-border-width: 0;
+$btn-padding-y: 1.375rem;
+$btn-padding-x: 1.5rem;
+/* 
+$btn-padding-y: 1.40625rem;
+$btn-padding-x: 2rem;
+ */
+$btn-font-size: 1.125rem;
+$btn-font-weight: 600;
+
+/* Text */
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$nav-link-font-size: 1rem;
+
+/* Background colors */
+$bg-light: #c4ccd0;
+
+
+
+
+
+/* these should probably be moved under inverse or navbar context:
+	$accordion-bg: transparent;
+	$accordion-color: #C7E3FC;
+ */
+
+
+
+/* then proceed in DOM order whenever possible: */
+:root,
+[data-bs-theme=light] {
+	--ms-ring-color:#cacacab9 !important;
+	--ms-spinner-color: #101820 !important;
+}
+@font-face {
+	font-family: 'RobotoFlex';
+	src: url('../src/assets/fonts/Roboto Flex variable.woff');
+}
+
+@font-face {
+	font-family: 'Eurostile';
+	src: url('../src/assets/fonts/Eurostile-LT-Medium.woff');
+}
+
+[data-bs-theme=light] {
+	--vff-bg-color: #FFF;
+}
+
+
+/* Buttons: */
+.btn, button, input[type="button"] {
+	letter-spacing: .05em;
+	line-height: 1.1 !important;
+}
+.btn:hover, button:hover, input[type="button"]:hover {
+	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.4);
+}
+[data-bs-theme=light] .btn-primary {
+	--bs-btn-hover-bg: #14374A;
+	--bs-btn-active-bg: #244456;
+	--bs-btn-disabled-bg: #DFDFE0;
+	--bs-btn-disabled-color: #959697;
+}
+[data-bs-theme=light] .btn-primary:focus {
+	--bs-btn-bg: #244456;
+}
+[data-bs-theme=light] .btn-secondary {
+	--bs-btn-bg: #D4E3FF;
+	--bs-btn-hover-bg: #C3D3EF;
+	--bs-btn-active-bg: #B6C7E3;
+	--bs-btn-color: #001C39;
+	--bs-btn-hover-color: #001C39;
+	--bs-btn-disabled-bg: #DFDFE0;
+	--bs-btn-disabled-color: #88898A;
+}
+[data-bs-theme=light] .btn-secondary:focus {
+	--bs-btn-bg: #B6C7E3;
+}
+[data-bs-theme=light] .btn-tertiary {
+	--bs-btn-bg: #FEBE3F !important;
+	--bs-btn-hover-bg: #FEC34E;
+	--bs-btn-active-bg: #FEC75A;
+	--bs-btn-color: var(--bs-primary) !important;
+	--bs-btn-disabled-bg: #1F4152;
+	--bs-btn-disabled-color: #697F8A;
+	--bs-btn-focus-shadow-rgb: 217, 164, 6;
+}
+[data-bs-theme=light] .btn-tertiary:focus {
+	--bs-btn-hover-bg: #FEC75A;
+}
+[data-bs-theme=light] .btn-interactive { 
+	--bs-btn-bg: var(--bs-interactive);
+	--bs-btn-color: #fff;
+	--bs-btn-hover-bg: #2772BD;/* guessed */
+	--bs-btn-hover-color: #fff;
+	--bs-btn-disabled-bg: #1F4152;
+	--bs-btn-disabled-color: #697F8A;
+}
+[data-bs-theme=light] .btn-interactive:focus {
+	--bs-btn-hover-bg: #2772BD;/* guessed */
+}
+
+[data-bs-theme=light] .btn-danger {
+	background-color: #B3261E;
+	color: #FFF !important;
+}
+[data-bs-theme=light] .btn-outline-primary {
+	--bs-btn-border-color: var(--bs-grayvar-500);
+	--bs-btn-border-width: 2px;
+	--bs-btn-bg: transparent;
+	--bs-btn-color: var(--bs-primary);
+	--bs-btn-hover-bg: transparent;
+	/*--bs-btn-hover-bg: #DBE9F0; how to do transparent @ 8%? */
+	--bs-btn-hover-color: var(--bs-primary);
+	--bs-btn-disabled-color: #697F8A;
+}
+.btn-outline-primary:hover {
+	opacity: 0.92;
+}
+.btn-outline-primary:focus {
+	opacity: 0.86;
+}
+
+/* Dark scheme/theme can be set globally or for a section/div: */
+[data-bs-theme=dark],
+[data-bs-theme=dark] body {
+	--bs-body-bg: rgb(var(--bs-dark-rgb));
+}
+[data-bs-theme=dark] * {
+	--vff-bg-color: var(--bs-primary);
+	--bs-body-color: #f00;
+	--bs-btn-bg: #f00;
+}
+[data-bs-theme=dark] .btn-primary {
+	--bs-btn-bg: #89CEFF;
+	--bs-btn-color: #285469;
+	--bs-btn-hover-bg: #7EC2F1;
+	--bs-btn-hover-color: #00344D;
+	--bs-btn-active-bg: #76B8E6;
+	--bs-btn-disabled-bg: #3B4144;
+	--bs-btn-disabled-color: #7A7F82;
+}
+[data-bs-theme=dark] .btn-primary:focus {
+	--bs-btn-hover-bg: #7A7F82;
+}
+[data-bs-theme=dark] .btn-secondary {
+	--bs-btn-bg: var(--bs-secondary);
+	--bs-btn-hover-bg: #1A5691;
+	--bs-btn-active-bg: #235E98;
+	--bs-btn-color: #BED9F1;
+	--bs-btn-hover-color: var(--bs-primary90);
+	--bs-btn-disabled-bg: #3B4144;
+	--bs-btn-disabled-color: #7A7F82;
+}
+[data-bs-theme=dark] .btn-secondary:focus {
+	--bs-btn-hover-bg: #235E98;
+}
+[data-bs-theme=dark] .btn-outline-primary {
+	--bs-btn-border-color: var(--bs-grayvar-600);
+	--bs-btn-color: var(--bs-primary80);
+	--bs-btn-hover-border-color: #7C868A;
+	--bs-btn-hover-bg: #18313B;
+	--bs-btn-hover-color: var(--bs-primary80);
+	--bs-btn-active-bg: #2A4453;
+	--bs-btn-disabled-border-color: #30363A;
+	--bs-btn-disabled-color: #696F71;
+}
+[data-bs-theme=dark] .btn-outline-primary:focus {
+	--bs-btn-hover-bg: #2A4453;
+}
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+
+
+/* Next - post-compile, extend/override Bootstrap here per style guide: */
+:root,
+[data-bs-theme=light] {
+	--bs-link-color: #58595B;
+	--bs-link-hover-color: #0168B7;
+	--bs-border-radius-lg: 0.625rem;/* modify .border-3 per style guide */
+	--bs-border-radius-xl: 0.9375rem;/* modify .border-4 per style guide */
+	/* --bs-light: #f00;
+	--bs-light-rgb: 255, 0, 0; */
+	--bs-secondary-rgb: 14, 76, 135;
+	--bs-heading-color: var(--bs-primary);
+	--bs-body-color: var(--bs-gray-900);
+}
+
+.bg-opacity-20 { --bs-bg-opacity: 0.2; }
+.bg-opacity-30 { --bs-bg-opacity: 0.3; }
+.bg-opacity-40 { --bs-bg-opacity: 0.4; }
+.bg-opacity-60 { --bs-bg-opacity: 0.6; }
+.bg-opacity-70 { --bs-bg-opacity: 0.7; }
+.bg-opacity-80 { --bs-bg-opacity: 0.8; }
+.bg-opacity-90 { --bs-bg-opacity: 0.9; }
+
+.bg-gray-100 { background-color: var(--bs-gray-100); }
+.bg-gray-200 { background-color: var(--bs-gray-200); }
+.bg-gray-300 { background-color: var(--bs-gray-300); }
+.bg-gray-400 { background-color: var(--bs-gray-400); }
+.bg-gray-500 { background-color: var(--bs-gray-500); }
+.bg-gray-600 { background-color: var(--bs-gray-600); }
+.bg-gray-700 { background-color: var(--bs-gray-700); }
+.bg-gray-800 { background-color: var(--bs-gray-800); }
+.bg-gray-900 { background-color: var(--bs-gray-900); }
+.bg-sld45 { background-color: var(--bs-sld45); }
+.bg-sbd3 { background-color: var(--bs-sbd3); }
+
+.bg-primary80 { background-color: var(--bs-primary80); }
+.bg-secondary80 { background-color: var(--bs-secondary80);}
+.bg-tertiary { background-color: var(--bs-tertiary); }
+.bg-success80 { background-color: var(--bs-success80);}
+.bg-warning80 { background-color: var(--bs-warning80);}
+.bg-danger70 { background-color: var(--bs-danger70);}
+
+.text-primary80 { color: var(--bs-primary80); }
+.text-gray { color: var(--bs-gray); }
+.text-gray-500 { color: var(--bs-gray-500); }
+
