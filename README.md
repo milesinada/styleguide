@@ -13,7 +13,7 @@ bootstrap will be added along with override file
 
 # npm run scss
 a new folder named compiled-bootstrap with a file named override-bootstrap.css will populate at root of project
-# add imports to main.js 
+# add imports to main.js order is important
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../compiled-bootstrap/override-bootstrap.css'
