@@ -163,12 +163,12 @@ $offcanvas-horizontal-width: 35%;
 }
 @font-face {
 	font-family: 'RobotoFlex';
-	src: url('../src/assets/fonts/Roboto Flex variable.woff');
+	src: url('../node_modules/miles-styleguide/fonts/Roboto-Flex-variable.woff');
 }
 
 @font-face {
 	font-family: 'Eurostile';
-	src: url('../src/assets/fonts/Eurostile-LT-Medium.woff');
+	src: url('../node_modules/miles-styleguide/fonts/Eurostile-LT-Medium.woff');
 }
 
 [data-bs-theme=light] {
@@ -316,7 +316,7 @@ $offcanvas-horizontal-width: 35%;
 }
 
 
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import "../bootstrap/scss/bootstrap";
 
 
 
