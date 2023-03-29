@@ -355,6 +355,12 @@ $offcanvas-horizontal-width: 35%;
 	--bs-heading-color: var(--bs-primary);
 	--bs-body-color: var(--bs-gray-900);
 }
+.bg-opacity-5 { --bs-bg-opacity: 0.05; }
+.bg-opacity-8 { --bs-bg-opacity: 0.08; }
+.bg-opacity-11 { --bs-bg-opacity: 0.11; }
+.bg-opacity-12 { --bs-bg-opacity: 0.12; }
+.bg-opacity-14 { --bs-bg-opacity: 0.14; }
+
 
 .bg-opacity-20 { --bs-bg-opacity: 0.2; }
 .bg-opacity-30 { --bs-bg-opacity: 0.3; }
