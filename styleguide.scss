@@ -455,6 +455,21 @@ $offcanvas-horizontal-width: 35%;
 .text-interactive { color: var(--bs-interactive); }
 
 /* missing from BS5: */
+.opacity-5 {
+	opacity: 0.05 !important;
+}
+.opacity-8 {
+	opacity: 0.08 !important;
+}
+.opacity-11 {
+	opacity: 0.11 !important;
+}
+.opacity-12 {
+	opacity: 0.12 !important;
+}
+.opacity-14 {
+	opacity: 0.14 !important;
+}
 .mt-45 {
 	margin-top: 2rem !important;
 }
