@@ -737,6 +737,8 @@ $offcanvas-horizontal-width: 35%;
 .opacity-14 {
 	opacity: 0.14 !important;
 }
+
+// margins
 .mt-45 {
 	margin-top: 2rem !important;
 }
@@ -835,7 +837,69 @@ $offcanvas-horizontal-width: 35%;
 .mx-n5 {
 	margin-left: -3rem !important;
 }
+
+// buttons
 .btn-group .btn-md.btn-outline-primary:not(:first-child) {
 	border-left: none;/* correct double border on btn group outline */
 }
 
+// text
+.fs-xl {
+	font-size: 2rem !important;
+}
+.fs-xxl {
+	font-size: 2.5rem !important;
+}
+.fs-huge {
+	font-size: 8.75rem !important;
+	font-weight: 600 !important;
+}
+// display font
+.fd-lg {
+	font-family: Eurostile !important ;
+	font-weight: 600 !important ;
+	font-size: 3.4375rem !important ;
+}
+.fd-md {
+	font-family: Eurostile !important ;
+	font-weight: 600 !important ;
+	font-size: 2.875rem !important ;
+}
+.fd-sm {
+	font-family: Eurostile !important ;
+	font-weight: 600 !important ;
+	font-size: 2.375rem !important ;
+}
+// primary font
+.fp-lg {
+	font-weight: 600 !important ;
+	font-size: 3.4375rem !important ;
+	line-height: 4rem !important ;
+}
+.fp-md {
+	font-weight: 600 !important ;
+	font-size: 2.875rem !important ;
+}
+.fp-sm {
+	font-weight: 600 !important ;
+	font-size: 2.375rem !important ;
+}
+// label font
+.lb-lg {
+	font-size: 0.875rem !important ;
+	font-weight: 500 !important ;
+	line-height: 1.25rem !important ;
+	letter-spacing: 0.00625rem !important ;
+}
+.lb-md {
+	font-size: 0.75rem !important ;
+	font-weight: 500 !important ;
+	line-height: 1rem !important ;
+	letter-spacing: 0.03125rem !important ;
+}
+.lb-sm {
+	font-size: 0.625rem !important ;
+	font-weight: 500 !important ;
+	line-height: 1rem !important ;
+	letter-spacing: 0.03125rem !important ;
+}
