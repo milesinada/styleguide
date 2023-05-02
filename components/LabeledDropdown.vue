@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import DropdownCaret from "@/components/icons/DropdownCaret.vue";
+import DropdownCaret from "./icons/DropdownCaret.vue";
 export default {
 	components: {
 		DropdownCaret,
