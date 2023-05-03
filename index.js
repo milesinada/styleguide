@@ -1,9 +1,9 @@
-const components = require('./components.json')
+import components from './components.json';
 
-module.exports = {
-	install(Vue) {
+export default {
+	install(app) {
 		Object.entries(components).forEach(([name, path]) => {
-		Vue.component(name, () => import(`./src/${path}`))
+			app.component(name, () => import(`./${path}`))
 		})
 	}
-	}
+}
