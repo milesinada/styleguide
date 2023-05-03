@@ -1,6 +1,6 @@
 {
   "name": "miles-styleguide",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "styleguide for ava",
   "main": "styelguide.scss",
   "types": "miles-styleguide.d.ts",
