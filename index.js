@@ -1,10 +1,14 @@
 import * as components from './components.json';
 
+const pkgName = 'miles-styleguide';
+const pkgPath = `/${pkgName}`;
+
 export default {
-	install(app) {
-		Object.keys(components).forEach(name => {
-		const component = components[name];
-		app.component(name, () => import(`./${component.path}`));
-		});
-	}
+  install(app) {
+    Object.entries(components).forEach(([name, path]) => {
+      if (path) {
+        app.component(name, () => import(/* webpackChunkName: "[request]" */ `${pkgPath}/${path}`));
+      }
+    });
+  },
 };
