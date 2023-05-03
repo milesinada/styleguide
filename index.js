@@ -1,5 +1,9 @@
-function test(string){
-	return string === 'test this pleassee'
-}
+const components = require('./components.json')
 
-module.exports = test
+module.exports = {
+	install(Vue) {
+		Object.entries(components).forEach(([name, path]) => {
+		Vue.component(name, () => import(`./src/${path}`))
+		})
+	}
+	}
